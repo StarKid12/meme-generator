@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="icon" href="logo.png" type="image/png">
+  <title>Meme Generator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Meme Generator</h1>
+
+  <div class="controls-container">
+    <div class="control-box">
+      <select id="templateSelect">
+        <option value="">-- Choose a Meme Template --</option>
+        <option value="drake">Drakeposting</option>
+        <option value="distracted">Distracted Boyfriend</option>
+        <option value="doge">Doge</option>
+        <option value="strong_weak_doge">Strong and Weak Doge</option>
+        <option value="disaster_girl">Disaster Girl</option>
+        <option value="megamind">Megamind</option>
+        <option value="pooh">Winnie the Pooh</option>
+        <option value="squid_game_before_after">Squid Game Before and After</option>
+        <option value="excited_then_disappointed">Excited then Disappointed</option>
+        <option value="heart">Heart</option>
+        <option value="imagination">Imagination</option>
+        <option value="bike">Bike</option>
+        <option value="trump_order">Trump Order</option>
+        <option value="yellow_ball">Yellow Ball</option>
+        <option value="skeptical_kid">Skeptical Kid</option>
+        <option value="everywhere">Everywhere</option>
+        <option value="smart_thinking">Roll Safe</option>
+        <option value="i_sleep_real">I Sleep Real S***</option>
+        <option value="pool">Pool</option>
+        <option value="jerry">Jerry</option>
+        <option value="split_path">Split Path</option>
+        <option value="confused">Confused</option>
+        <option value="armwrestle">Arm-wrestle</option>
+        <option value="highway">Highway</option>
+        <option value="one_does_not_simply">One Does Not Simply</option>
+        <option value="boardroom">Boardroom</option>
+        <option value="change_my_mind">Change my Mind</option>
+        <option value="running_man">Running Man</option>
+        <option value="woman_yelling_cat">Woman Yelling at a Cat</option>
+        <option value="gru_plan">Gru Plan</option>
+        <option value="brain">Brain</option>
+        <option value="yoda">Yoda</option>
+        <option value="skeleton">Skeleton</option>
+        <option value="harold">Harold</option>
+        <option value="batman">Batman</option>
+        <option value="bed">Bed</option>
+        <option value="kermit">Kermit</option>
+        <option value="hydra">Hydra</option>
+        <option value="bus">Bus</option>
+        <option value="scared_anime_girl">Scared Anime Girl</option>
+        <option value="uno_card">Uno Card</option>
+        <option value="squidward_vent">Squidward Window</option>
+        <option value="spongebob_chicken">SpongeBob Chicken</option>
+        <option value="spongebob_paper">SpongeBob Paper</option>
+        <option value="spongebob_monster">SpongeBob Monster</option>
+        <option value="spongebob_muscle_chart">SpongeBob Muscle Chart</option>
+      </select>
+
+      <div id="uploadSection">
+        <input type="file" id="imageInput">
+      </div>
+
+      <div id="textInputs"></div>
+      <button onclick="addTextBox()">Add Text</button>
+    </div>
+
+    <div class="control-box" id="positionSliders"></div>
+  </div>
+
+  <div class="button-row">
+    <button onclick="resetMeme()">Reset</button>
+    <button onclick="downloadMeme()">Download</button>
+  </div>
+
+  <canvas id="memeCanvas"></canvas>
+
+  <script src="script.js"></script>
+  <footer>
+    Made by Meitar &copy; 2025
+  </footer>
+</body>
+</html>
