@@ -177,7 +177,7 @@ document.getElementById('templateSelect').addEventListener('change', function(e)
       } else if (selected === 'strong_weak_doge') {
          addTextBox('Text 1', 175, 150);
          addTextBox('Text 2', 400, 200);
-      } else if (selected === 'i_sleep_real') {
+      } else if (selected === 'i_sleep_real' || selected === 'disgust') {
          addTextBox('Top Text', 125, 115);
          addTextBox('Bottom Text', 125, 390);
        }  else if (selected === 'gru_plan') {
